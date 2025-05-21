@@ -3,6 +3,8 @@ import httpx
 
 app = FastAPI()
 
+
+
 @app.get("/exchange-rate/{from_curr}/{to_curr}")
 async def get_exchange_rate(from_curr: str, to_curr: str):
     url = f"https://v6.exchangerate-api.com/v6/76bbd4fd2f0355465749613c/pair/{from_curr}/{to_curr}"

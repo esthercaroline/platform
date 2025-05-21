@@ -158,3 +158,9 @@ http://localhost:8000/exchange-rate/USD/EUR
 [Link para o vídeo (2-3 min)](https://youtu.be/seu-video)
 
 ---
+
+## ✅ Repositório
+
+- [Link do repositório do GitHub com o código-fonte e documentação]
+
+---
