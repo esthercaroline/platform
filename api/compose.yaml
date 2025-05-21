@@ -10,8 +10,6 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-store}
     volumes:
       - $VOLUME/postgres/store:/var/lib/postgresql/data
-    # ports:
-    #   - 5432:5432
 
   account:
     hostname: account
@@ -52,12 +50,12 @@ services:
       DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-store}
 
 
-  # order:
-  #   hostname: order
-  #   build:
-  #     context: ./order-service
-  #     dockerfile: Dockerfile
-  #   environment:
-  #     DATABASE_HOST: db
-  #     DATABASE_USER: ${POSTGRES_USER:-store}
-  #     DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-store}
+  order:
+    hostname: order
+    build:
+      context: ./order-service
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_HOST: db
+      DATABASE_USER: ${POSTGRES_USER:-store}
+      DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-store}

@@ -29,10 +29,10 @@ spring:
           predicates:
             - Path=/product/**
 
-        # - id: order
-        #   uri: http://order:8080
-        #   predicates:
-        #     - Path=/order/**
+        - id: order
+          uri: http://order:8080
+          predicates:
+            - Path=/order/**
 
 logging:
   level:
