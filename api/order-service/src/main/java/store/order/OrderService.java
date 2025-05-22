@@ -31,22 +31,22 @@ public class OrderService {
         double totalOrder = 0.0;
         List<OrderItem> newOrderItems = new ArrayList<>();
 
-        for (OrderItem item : order.items()) {
-            ResponseEntity<ProductOut> response = productController.findById(item.product().id());
+        for (OrderItem oi : order.items()) {
+            ResponseEntity<ProductOut> response = productController.findById(oi.product().id());
             ProductOut product = response.getBody();
 
             if (product == null) {
                 throw new ResponseStatusException(
                         HttpStatus.BAD_REQUEST,
-                        "O produto com id=" + item.product().id() + " não existe.");
+                        "O produto com id=" + oi.product().id() + " não existe.");
             }
 
-            double itemTotal = product.price() * item.quantity();
+            double itemTotal = product.price() * oi.quantity();
             totalOrder += itemTotal;
 
             OrderItem orderItem = OrderItem.builder()
                     .product(product)
-                    .quantity(item.quantity())
+                    .quantity(oi.quantity())
                     .total(itemTotal)
                     .build();
 
@@ -56,9 +56,9 @@ public class OrderService {
         order.total(totalOrder);
         final Order savedOrder = orderRepository.save(new OrderModel(order)).to();
 
-        newOrderItems.forEach(item -> {
-            item.order(savedOrder);
-            savedOrder.items().add(orderItemRepository.save(new OrderItemModel(item)).to());
+        newOrderItems.forEach(oi -> {
+            oi.order(savedOrder);
+            savedOrder.items().add(orderItemRepository.save(new OrderItemModel(oi)).to());
         });
 
         return savedOrder;
