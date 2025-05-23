@@ -1,7 +1,9 @@
 
 # Roteiro 1 - Exchange
 
-## Data de Entrega: 23/02/2025
+## Desenvolvedor
+
+- Esther Cunha
 
 ## Descrição
 
@@ -161,6 +163,6 @@ http://localhost:8000/exchange-rate/USD/EUR
 
 ## ✅ Repositório
 
-- [Link do repositório do GitHub com o código-fonte e documentação]
+- [https://github.com/Platform-Microservices/exchange-service](https://github.com/Platform-Microservices/exchange-service)
 
 ---

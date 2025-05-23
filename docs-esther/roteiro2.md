@@ -1,10 +1,10 @@
 
 # Roteiro 2 — Product API
 
-## Grupo K
+## Desenvolvedor
 
 - Esther Cunha  
-- [Colocar outros nomes do grupo, se houver]
+
 
 ---
 
@@ -164,6 +164,7 @@ graph TD
 
 ## ✅ Repositório
 
-- [Link do repositório do GitHub com o código-fonte e documentação]
+- [https://github.com/Platform-Microservices/product](https://github.com/Platform-Microservices/product)
+- [https://github.com/Platform-Microservices/product-service](https://github.com/Platform-Microservices/product-service)
 
 ---
