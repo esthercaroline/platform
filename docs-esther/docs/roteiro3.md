@@ -7,7 +7,7 @@
 
 ---
 
-## ✅ Descrição da Atividade
+## Descrição da Atividade
 
 Implementação de um **microserviço Order** responsável por cadastrar pedidos contendo _N_ itens e expor operações RESTful para consulta.
 
@@ -22,9 +22,9 @@ Requisitos atendidos:
 
 ---
 
-## ✅ Endpoints Implementados
+## Endpoints Implementados
 
-### ➡️ POST `/order`
+### POST `/order`
 
 Cria um pedido com múltiplos itens.  
 Se algum `idProduct` não existir no microserviço Product, retorna **`400 Bad Request`**.
@@ -68,7 +68,7 @@ Se algum `idProduct` não existir no microserviço Product, retorna **`400 Bad 
 
 ---
 
-### ➡️ GET `/order`
+### GET `/order`
 
 Retorna todos os pedidos.
 
@@ -84,19 +84,18 @@ Retorna todos os pedidos.
   { "id": "uuid-order‑2", "date": "2025-05-23", ... }
 ]
 ```
-
-✅ `200 OK`
+ `200 OK`
 
 ---
 
-### ➡️ GET `/order/{id}?idAccount={idAccount}`
+### GET `/order/{id}?idAccount={idAccount}`
 
 Busca um pedido por ID **e** verifica se pertence à conta.  
 Se a combinação não existir, retorna **`404 Not Found`**.
 
 ---
 
-## ✅ Bottlenecks / Destaques
+## Bottlenecks / Destaques
 
 | ✅ | Implementação |
 |----|---------------|
@@ -108,7 +107,7 @@ Se a combinação não existir, retorna **`404 Not Found`**.
 
 ---
 
-## ✅ Estrutura do Projeto
+## Estrutura do Projeto
 
 - `Order.java` → objeto de domínio (DTO).
 - `OrderItem.java` → objeto de domínio.
@@ -121,7 +120,7 @@ Se a combinação não existir, retorna **`404 Not Found`**.
 
 ---
 
-## ✅ Base de Dados
+## Base de Dados
 
 Script Flyway utilizado (`orders` é o _schema_ default):
 
@@ -150,7 +149,7 @@ CREATE INDEX IF NOT EXISTS idx_order_item__id_order ON orders.order_item(id_orde
 
 ---
 
-## ✅ Diagrama — Arquitetura da Solução
+## Diagrama — Arquitetura da Solução
 
 ```mermaid
 graph TD
@@ -164,7 +163,7 @@ graph TD
 
 ---
 
-## ✅ Testes Realizados
+## Testes Realizados
 
 - Testes manuais via **Postman** em todos os endpoints (`201/200/404/400`).  
 - Teste de integração salvando pedido com 3 itens e conferindo persistência.  
@@ -172,13 +171,8 @@ graph TD
 
 ---
 
-## ✅ Vídeo de Apresentação
 
-[Inserir link do vídeo apresentando o microserviço Order]
-
----
-
-## ✅ Repositório
+## Repositório
 
 - [https://github.com/Platform-Microservices/order](https://github.com/Platform-Microservices/order)
 - [https://github.com/Platform-Microservices/order-service](https://github.com/Platform-Microservices/order-service)

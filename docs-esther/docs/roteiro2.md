@@ -8,7 +8,7 @@
 
 ---
 
-## ✅ Descrição da Atividade
+## Descrição da Atividade
 
 Implementação de um **microserviço Product** com as seguintes operações RESTful:
 
@@ -26,9 +26,9 @@ O serviço foi implementado em **Java** utilizando:
 
 ---
 
-## ✅ Endpoints Implementados
+## Endpoints Implementados
 
-### ➡️ POST `/product`
+### POST `/product`
 
 **Request body:**
 
@@ -50,12 +50,11 @@ O serviço foi implementado em **Java** utilizando:
   "unit": "kg"
 }
 ```
-
-✅ Retorna `201 Created` ou `200 OK`.
+ Retorna `201 Created` ou `200 OK`.
 
 ---
 
-### ➡️ GET `/product`
+### GET `/product`
 
 **Response:**
 
@@ -76,11 +75,11 @@ O serviço foi implementado em **Java** utilizando:
 ]
 ```
 
-✅ Retorna `200 OK`.
+Retorna `200 OK`.
 
 ---
 
-### ➡️ GET `/product/{id}`
+### GET `/product/{id}`
 
 **Response:**
 
@@ -93,25 +92,25 @@ O serviço foi implementado em **Java** utilizando:
 }
 ```
 
-✅ Retorna `200 OK`.
+Retorna `200 OK`.
 
 ---
 
-### ➡️ DELETE `/product/{id}`
+### DELETE `/product/{id}`
 
-✅ Retorna `204 No Content` ao remover com sucesso.
-
----
-
-## ✅ Bottlenecks Implementados
-
-- ✅ Implementação de validação para evitar `StaleObjectStateException` ao salvar ou deletar produtos.
-- ✅ Uso de `@GeneratedValue` para geração automática de UUID.
-- ✅ Configuração de Spring Data JPA para operações `CRUD` simplificadas.
+Retorna `204 No Content` ao remover com sucesso.
 
 ---
 
-## ✅ Estrutura do Projeto
+## Bottlenecks Implementados
+
+- Implementação de validação para evitar `StaleObjectStateException` ao salvar ou deletar produtos.
+- Uso de `@GeneratedValue` para geração automática de UUID.
+- Configuração de Spring Data JPA para operações `CRUD` simplificadas.
+
+---
+
+## Estrutura do Projeto
 
 - `Product.java` → entidade de domínio.
 - `ProductModel.java` → entidade de persistência JPA.
@@ -121,7 +120,7 @@ O serviço foi implementado em **Java** utilizando:
 
 ---
 
-## ✅ Base de Dados
+## Base de Dados
 
 Tabela criada no PostgreSQL com o seguinte script:
 
@@ -136,7 +135,7 @@ CREATE TABLE product (
 
 ---
 
-## ✅ Diagrama — Arquitetura da Solução
+## Diagrama — Arquitetura da Solução
 
 ```mermaid
 graph TD
@@ -148,21 +147,15 @@ graph TD
 
 ---
 
-## ✅ Testes Realizados
+## Testes Realizados
 
 - ✅ Testes via Postman de todos os endpoints.  
 - ✅ Teste de integração com o Gateway e validação JWT via Auth Service.  
 
----
-
-
-## ✅ Vídeo de Apresentação
-
-[Link do vídeo demonstrando a execução e explicação do projeto]
 
 ---
 
-## ✅ Repositório
+## Repositório
 
 - [https://github.com/Platform-Microservices/product](https://github.com/Platform-Microservices/product)
 - [https://github.com/Platform-Microservices/product-service](https://github.com/Platform-Microservices/product-service)

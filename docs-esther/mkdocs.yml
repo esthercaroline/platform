@@ -1,0 +1,15 @@
+site_name: Exercícios de Microserviços - 2025.1  
+nav:
+  - Início: index.md
+  - Roteiro 1 - Exchange: roteiro1.md
+  - Roteiro 2 - Product: roteiro2.md
+  - Roteiro 3 - Order: roteiro3.md
+  - Roteiro 4 - Jenkins: roteiro4.md
+  - Roteiro 5 - Kubernetes: roteiro5.md
+  - Bottlenecks: bottlenecks.md
+  - Projeto: projetos.md
+  - Diagramas: diagrama.md
+theme:
+  name: material
+plugins:
+  - search

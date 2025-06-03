@@ -8,6 +8,7 @@ import java.util.stream.StreamSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -63,7 +64,7 @@ public class OrderService {
 
         return savedOrder;
     }
-
+    @Cacheable("orders")
     public Order findById(String id, String idAccount) {
         Order found = orderRepository.findByIdAndIdAccount(id, idAccount)
                 .map(OrderModel::to)
