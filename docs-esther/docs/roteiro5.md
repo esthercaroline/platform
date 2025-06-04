@@ -137,7 +137,7 @@ Esses comandos confirmam que os serviços estão rodando no mesmo cluster.
 ## Kubernetes rodando
 
 **Exemplo:**  
-![](imagens/kubernetes.png)
+![](imagens/jenkins.png)
 
 ---
 

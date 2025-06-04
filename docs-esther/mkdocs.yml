@@ -8,7 +8,8 @@ nav:
   - Roteiro 5 - Kubernetes: roteiro5.md
   - Bottlenecks: bottlenecks.md
   - Projeto: projetos.md
-  - Diagramas: diagrama.md
+  - Análise de custos: custos.md
+  - PaaS: paas.md
 theme:
   name: material
 plugins:

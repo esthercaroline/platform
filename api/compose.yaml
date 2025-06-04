@@ -62,12 +62,11 @@ services:
 
   prometheus:
     image: prom/prometheus:latest
-    platform: linux/amd64
     hostname: prometheus
     ports:
       - 9090:9090
     volumes:
-      - $VOLUME/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./volume/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
   grafana:
     image: grafana/grafana-enterprise

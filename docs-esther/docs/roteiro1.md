@@ -153,11 +153,6 @@ docker run -p 8000:80 exchange-service
 Acesse:  
 http://localhost:8000/exchange-rate/USD/EUR
 
----
-
-## Vídeo de apresentação
-
-[Link para o vídeo (2-3 min)](https://youtu.be/seu-video)
 
 ---
 

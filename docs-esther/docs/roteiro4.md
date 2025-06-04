@@ -69,7 +69,7 @@ pipeline {
         }
     }
 }
-
+```
 ---
 
 ## Etapas da Pipeline
@@ -86,6 +86,6 @@ pipeline {
 ## Jenkins rodando
 
 **Exemplo:**  
-![](imagens/jenkins.png)
+![](imagens/kubernetes.png)
 
 ---
